@@ -37,13 +37,19 @@ public class Notes {
     // gets user input and validates it
     public static char getInput(Scanner scnr) {
         // prompt for user input
+        char input = ' ';
         System.out.println("Choose an option from Main Menu:");
-        char input = scnr.nextLine().toUpperCase().charAt(0);
 
-        // input data validation
-        while (input != 'A' && input != 'S' && input != 'Q') {
-            System.out.println("Invalid input. Please choose an option from Main Menu:");
+        try {
             input = scnr.nextLine().toUpperCase().charAt(0);
+            // input data validation
+            while (input != 'A' && input != 'S' && input != 'Q') {
+                System.out.println("Invalid input. Please choose an option from Main Menu:");
+                input = scnr.nextLine().toUpperCase().charAt(0);
+            }
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println("Oops! We couldn't detect an input. Please try again by choosing " +
+                    "an option from Main Menu.");
         }
 
         return input;
