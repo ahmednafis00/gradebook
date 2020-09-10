@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="btntext"><b>DO NOT TAP ME!</b></string>
+    <string name="content_description">rebel_img</string>
+</resources>
