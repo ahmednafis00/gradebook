@@ -16,7 +16,8 @@ public class EmailClient {
         // log in
         System.out.println("What is your username?"); 
         String username = userBufferedReader.readLine().trim();
-        outToServer.writeBytes(EmailProtocolMessage.TYPE_KEY + EmailProtocolMessage.PARAM_ASSIGN + EmailProtocolMessage.LOGIN_COMMAND + EmailProtocolMessage.PARAM_SEPERATOR + EmailProtocolMessage.LOGIN_USERNAME + EmailProtocolMessage.PARAM_ASSIGN + username + "\n");
+        outToServer.writeBytes(EmailProtocolMessage.TYPE_KEY + EmailProtocolMessage.PARAM_ASSIGN + EmailProtocolMessage.LOGIN_COMMAND + 
+            EmailProtocolMessage.PARAM_SEPERATOR + EmailProtocolMessage.LOGIN_USERNAME + EmailProtocolMessage.PARAM_ASSIGN + username + "\n");
         EmailProtocolMessage login_ack = new EmailProtocolMessage(serverBufferedReader.readLine());
         if (login_ack.getParam(EmailProtocolMessage.STATUS).equals(EmailProtocolMessage.ACK)) {
             System.out.println("\nLog in successful. Hello, " + username + "!");
@@ -64,9 +65,9 @@ public class EmailClient {
                         String body = "";
                         for (int j = 0; j < arrMsg.length; ++j) {
                             if (arrMsg[j].substring(0, arrMsg[j].indexOf(EmailProtocolMessage.EMAIL_CONTENT)).equals(EmailProtocolMessage.EMAIL_SENDER)) {
-                                sender = arrMsg[j].substring(arrMsg[j].indexOf(EmailProtocolMessage.EMAIL_CONTENT) + 1);
+                                sender = arrMsg[j].substring(arrMsg[j].indexOf(EmailProtocolMessage.EMAIL_CONTENT) + EmailProtocolMessage.EMAIL_CONTENT.length());
                             } else if (arrMsg[j].substring(0, arrMsg[j].indexOf(EmailProtocolMessage.EMAIL_CONTENT)).equals(EmailProtocolMessage.EMAIL_BODY)) {
-                                body = arrMsg[j].substring(arrMsg[j].indexOf(EmailProtocolMessage.EMAIL_CONTENT) + 1);
+                                body = arrMsg[j].substring(arrMsg[j].indexOf(EmailProtocolMessage.EMAIL_CONTENT) + EmailProtocolMessage.EMAIL_CONTENT.length());
                             } 
                         }
                         System.out.println("\nFrom: " + sender + "\nBody: " + body);

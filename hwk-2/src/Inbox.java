@@ -11,7 +11,7 @@ public class Inbox {
         String[] arr = message.split(EmailProtocolMessage.EMAIL_SEPARATOR, 0);
         for (int i = 0; i < arr.length; ++i) {
             if (arr[i].substring(0, arr[i].indexOf(EmailProtocolMessage.EMAIL_CONTENT)).equals(EmailProtocolMessage.EMAIL_RECEIVER)) {
-                receiver = arr[i].substring(arr[i].indexOf(EmailProtocolMessage.EMAIL_CONTENT) + 1);
+                receiver = arr[i].substring(arr[i].indexOf(EmailProtocolMessage.EMAIL_CONTENT) + EmailProtocolMessage.EMAIL_CONTENT.length());
                 break;
             }      
         }  
