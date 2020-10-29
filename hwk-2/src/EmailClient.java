@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class EmailClient {
-    private static final String HOST_ADDRESS = "127.0.0.1";
+    private static final String HOST_ADDRESS = "13.58.79.219";
     private static final int PORT = 6789;
 
     public static void main(String[] args) throws IOException {
