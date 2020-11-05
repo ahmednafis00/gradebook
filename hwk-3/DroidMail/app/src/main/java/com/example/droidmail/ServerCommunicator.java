@@ -6,7 +6,7 @@ import java.io.*;
 import java.net.Socket;
 
 public class ServerCommunicator extends AsyncTask<String, Integer, String> {
-    private static final String SERVER_ADDRESS = "10.0.0.127";
+    private static final String SERVER_ADDRESS = "10.0.2.2";
     private static final int PORT = 6789;
 
     @Override
