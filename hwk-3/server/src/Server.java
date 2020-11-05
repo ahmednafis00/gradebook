@@ -117,7 +117,7 @@ public class Server {
         String token = message.getParam(EmailProtocolMessage.TOKEN);
         TcpUser destUser = mTcpUsers.get(token);
         
-        if (token == null || destUser.getUsername() == null) {
+        if (token == null || destUser == null || destUser.getUsername() == null) {
             return -1;
         }
         
@@ -137,7 +137,7 @@ public class Server {
         String token = message.getParam(EmailProtocolMessage.TOKEN);
         TcpUser destUser = mTcpUsers.get(token);
 
-        if (token == null || destUser.getUsername() == null) {
+        if (token == null || destUser == null || destUser.getUsername() == null) {
             return -1;
         }
 
@@ -167,7 +167,7 @@ public class Server {
         String token = message.getParam(EmailProtocolMessage.TOKEN);
         TcpUser destUser = mTcpUsers.get(token);
 
-        if (token == null || destUser.getUsername() == null) {
+        if (token == null || destUser == null || destUser.getUsername() == null) {
             return -1;
         }
         
