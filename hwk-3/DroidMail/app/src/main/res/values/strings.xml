@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DroidMail</string>
+    <string name="Welcome">Welcome To DroidMail!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in_btn">LOG IN</string>
+    <string name="log_in_success">Log in successful!</string>
+    <string name="log_in_fail">Oops! Log in unsuccessful due to incorrect username or password.</string>
+    <string name="menu">MENU</string>
+    <string name="inbox">INBOX</string>
+    <string name="refresh">Refresh</string>
+    <string name="send_msg">Compose email</string>
+    <string name="recipient">Recipient</string>
+    <string name="compose_msg">Write your message here</string>
+    <string name="send_msg_btn">SEND</string>
+    <string name="send_success">Your email was sent successfully!</string>
+    <string name="send_fail">Uh oh! Please try again. Your email could not be sent.</string>
+    <string name="log_out_btn">LOG OUT</string>
+
+
+</resources>
