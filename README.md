@@ -23,6 +23,11 @@ Moreover, I believe *gradebook* can improve student-instructor communication. On
 The program could be made more robust. Current limitations include:
 *	Only courses with 3 grading components can be added.
 *	User has to enter scores and create courses in a specific format (instructions are given in their respective layouts)
+* Students need to enter at least one score for every grading component to receive their progress results 
+* Most common reason for server crash: no input when the program expects one
+
+## Compatibility
+The program should run on most Android devices. If you're running it on an emulator in Android Studio, I'd recommend using Nexus 5 API 30. 
 
 ## Future Steps:
 I will definitely be working this winter to make improvements in this project. Most of them can be done by making myself more skilled in layout design in Android Studio.  Some improvements I currently have in mind:
