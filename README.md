@@ -21,7 +21,8 @@ Moreover, I believe *gradebook* can improve student-instructor communication. On
 
 ## Limitations
 The program could be made more robust. Current limitations include:
-*	Only courses with 3 grading components can be added.
+*	Only courses with 3 grading components can be added
+* Only accepts scores out of 100
 *	User has to enter scores and create courses in a specific format (instructions are given in their respective layouts)
 * Students need to enter at least one score for every grading component to receive their progress results 
 * Most common reason for server crash: no input when the program expects one
