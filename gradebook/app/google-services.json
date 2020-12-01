@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "583154051888",
+    "firebase_url": "https://gradebook-ac0be.firebaseio.com",
+    "project_id": "gradebook-ac0be",
+    "storage_bucket": "gradebook-ac0be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583154051888:android:11245d2e08d6cf19b1b6f5",
+        "android_client_info": {
+          "package_name": "com.example.gradebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583154051888-76hkmalrgck0b99btmgdm5bssb1stld4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEJYIcXzZRWppunFaB8_3aRUmwMhVFFx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583154051888-76hkmalrgck0b99btmgdm5bssb1stld4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
