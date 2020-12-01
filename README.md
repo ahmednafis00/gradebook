@@ -29,7 +29,7 @@ The program could be made more robust. Current limitations include:
 ## Compatibility
 The program should run on most Android devices. If you're running it on an emulator in Android Studio, I'd recommend using Nexus 5 API 30. 
 
-## Future Steps:
+## Future Steps
 I will definitely be working this winter to make improvements in this project. Most of them can be done by making myself more skilled in layout design in Android Studio.  Some improvements I currently have in mind:
 *	Allow instructors to add grades and view class average for each grading component’s items
 *	Allow students to add grades and store them in a layout similar to the one used by instructors in Brightspace
