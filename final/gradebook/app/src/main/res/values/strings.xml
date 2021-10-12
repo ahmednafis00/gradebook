@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">gradebook</string>
+    <string name="log_in">LOG IN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="new_user">New to gradebok?</string>
+    <string name="create_acc">Create an account.</string>
+    <string name="log_in_success">Log in successful!</string>
+    <string name="log_in_fail">Oops! The email/password was incorrect.</string>
+    <string name="sign_up">Create new account</string>
+    <string name="name">Name</string>
+    <string name="institution">Institution (official name)</string>
+    <string name="instructor">Instructor?</string>
+    <string name="sign_up_btn">SIGN UP</string>
+    <string name="sign_up_success">New account created successfully!</string>
+    <string name="sign_up_fail">Couldn\'t create new account. Please try again!</string>
+    <string name="instructor_welcome">Instructor\'s gradebook</string>
+    <string name="view_courses">View courses</string>
+    <string name="create_course">Create new course</string>
+    <string name="credits">Credits</string>
+    <string name="done">Done</string>
+    <string name="add_component">Add grading component </string>
+    <string name="add_component_instructions">Add grading component in the form: name;quantity;weight</string>
+    <string name="student_welcome">Hi! Welcome to your gradebook.</string>
+    <string name="add_course">Add Course</string>
+    <string name="add_course_success">Course added successfully!</string>
+    <string name="add_course_fail">Uh-oh! Couldn\'t add course. Please try again.</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="check_progress">Check Progress</string>
+    <string name="component_scores_1">Scores (Component 1)</string>
+    <string name="component_scores_2">Scores (Component 2)</string>
+    <string name="component_scores_3">Scores (Component 3)</string>
+    <string name="desired_score">Desired overall score</string>
+    <string name="add_scores_instructions">Add available scores in the form: score 1;score 2; score 3 You must enter at least one score</string>
+    <string name="progress_hint">Your progress results will be displayed here.</string>
+    <string name="chat">COURSE CHAT</string>
+    <string name="send_msg">SEND</string>
+
+
+</resources>
